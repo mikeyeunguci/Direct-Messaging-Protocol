@@ -1,0 +1,1870 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>fp API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>fp</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># Rio Suzuki
+# rios@uci.edu
+# 78627374
+
+# Michael Yeung
+# myeung2@uci.edu
+# 71598323
+
+import tkinter as tk
+from tkinter import ttk, filedialog
+from Profile import Profile, RecipientNotFound
+from ds_messenger import DirectMessage, DirectMessenger
+import time
+
+
+class EditBody(tk.Frame):
+    &#34;&#34;&#34;
+    Creating the username/password body
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self.profile = profile
+        
+        tk.Label(self.root, text=&#39;Username&#39;).grid(row=0)
+        tk.Label(self.root, text=&#39;Password&#39;).grid(row=1)
+
+        self.inputUsername = tk.Entry(self.root)
+        self.inputPassword = tk.Entry(self.root)
+        self.inputUsername.grid(row=0, column=1)
+        self.inputPassword.grid(row=1, column=1)
+
+        #import data from profile
+        self.inputUsername.insert(10, profile.username)
+        self.inputPassword.insert(10, profile.password)
+
+class EditWindow(tk.Toplevel):
+    &#34;&#34;&#34;
+    Creating the settings window for editing username/password
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        super().__init__(root)
+        self.root = root
+        self.title(&#34;Edit Profile&#34;)
+        self.profile = profile
+
+        self.body = EditBody(self, self.profile)
+
+        button = tk.Button(self, text=&#39;Done&#39;, command=self.on_close)
+        button.grid(row=3, column=1)
+
+    def on_close(self):
+        if self.profile.username in self.profile.chats and not self.profile.username == self.body.inputUsername.get():
+            self.profile.chats.pop(self.profile.username)
+        self.profile.username = self.body.inputUsername.get()
+        self.profile.password = self.body.inputPassword.get()
+        self.profile.save_profile(self.root._profile_filename)
+        self.root.ds = DirectMessenger(self.root.dsuserver, self.body.inputUsername.get(), self.body.inputPassword.get())
+        self.root.footer.set_status(f&#34;Welcome {self.profile.username} to ICS Messenger &#34;)
+        if not self.profile.username in self.profile.chats:
+            self.profile.chats[self.profile.username] = []
+        self.destroy()
+
+class BioBody(tk.Frame):
+    &#34;&#34;&#34;
+    Creating the edit bio body
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self.profile = profile
+
+        tk.Label(self.root, text=&#39;Bio&#39;).grid(row=0)
+
+        self.inputBio = tk.Text(self.root)
+        self.inputBio.grid(row=1, column=0)
+
+        #import data from profile
+        self.inputBio.insert(0.0, profile.bio)
+
+class BioWindow(tk.Toplevel):
+    &#34;&#34;&#34;
+    Creating the settings window for changing bio
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        super().__init__(root)
+        self.root = root
+        self.title(&#34;Edit Bio&#34;)
+        self.profile = profile
+        self.geometry(&#39;700x450&#39;)
+
+        self.body = BioBody(self, self.profile)
+
+        button = tk.Button(self, text=&#39;Done&#39;, command=self.on_close)
+        button.grid(row=3, column=1)
+
+    def on_close(self):
+        self.profile.bio = self.body.inputBio.get(0.0, &#39;end&#39;)
+        self.profile.save_profile(self.root._profile_filename)
+        self.destroy()
+
+class AddUser(tk.Frame):
+    &#34;&#34;&#34;
+    Creating the body to add a user to talk to
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self.profile = profile
+        
+        tk.Label(self.root, text=&#39;Recipient&#39;).grid(row=0)
+
+        self.inputRecipient = tk.Entry(self.root)
+        self.inputRecipient.grid(row=0, column=1)
+
+class AddWindow(tk.Toplevel):
+    &#34;&#34;&#34;
+    Creating a window to add user in the settings
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        super().__init__(root)
+        self.root = root
+        self.title(&#34;Add Recipient&#34;)
+        self.profile = profile
+
+        self.body = AddUser(self, self.profile)
+
+        button = tk.Button(self, text=&#39;Add&#39;, command=self.on_close)
+        button.grid(row=3, column=1)
+
+    def on_close(self):
+        self.profile.chats[self.body.inputRecipient.get()] = []
+        self.root.body.set_dms(self.profile.chats, self.profile.username)
+        self.profile.save_profile(self.root._profile_filename)
+        self.destroy()
+
+class Body(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the body portion of the root frame.
+    &#34;&#34;&#34;
+    def __init__(self, root, select_callback=None, app = None):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._select_callback = select_callback
+        self.app = app
+
+        # a list of the dms objects available in the active DSU file
+        self.dms = [DirectMessage]
+        
+        # After all initialization is complete, call the _draw method to pack the widgets
+        # into the Body instance 
+        self._draw()
+
+    def node_select(self, event):
+        &#34;&#34;&#34;
+        Displays message from the selected recipient
+        &#34;&#34;&#34;
+        try:
+            index = int(self.dms_tree.selection()[0])
+            name = self.dms[index]
+            self.app.current_recipient = name
+        except:
+            pass
+        self.app.load_messages()
+
+        self.message_editor.configure(state = &#34;normal&#34;)
+        self.message_editor.delete(&#39;1.0&#39;, &#39;end&#39;)
+        #scrolls to bottom
+        self.display.see(&#39;end&#39;)
+
+    def get_selected_index(self):
+        &#34;&#34;&#34;
+        Returns the index of the selected recipient
+        &#34;&#34;&#34;
+        if len(self.dms_tree.selection()) &gt; 0:
+            return int(self.dms_tree.selection()[0])
+        return -1
+
+    def get_text_message(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns the text that is currently displayed in the message_editor widget.
+        &#34;&#34;&#34;
+        return self.message_editor.get(&#39;1.0&#39;, &#39;end&#39;).rstrip()
+
+    def add_text_message(self, text:str):
+        &#34;&#34;&#34;
+        Add new text to the display box
+        &#34;&#34;&#34;
+        # code that deletes all current text in the self.display widget
+        # and inserts the value contained within the text parameter.
+        self.display.insert(&#39;end&#39;, text)
+        self.display.see(&#39;end&#39;)
+
+    def set_dms(self, dms:dict, exclude_name:str):
+        &#34;&#34;&#34;
+        Populates the tree with the recipient names
+        &#34;&#34;&#34;
+        self.dms = []
+        self.dms_tree.delete(*self.dms_tree.get_children())
+
+        keys = list(dms.keys())
+
+        for i in range (len(keys)):
+            if not keys[i] == exclude_name:
+                self.insert_name(str(keys[i]))
+
+    def insert_name(self, name:str):
+        &#34;&#34;&#34;
+        Inserts a single recipient name to the dms_tree widget.
+        &#34;&#34;&#34;
+        self.dms.append(name)
+        id = len(self.dms) - 1 #adjust id for 0-base of treeview widget
+        self._insert_names_tree(id, name)
+
+    def reset_ui(self):
+        &#34;&#34;&#34;
+        Resets all UI widgets to their default state. Useful for when clearing the UI is neccessary such
+        as when a new DSU file is loaded, for example.
+        &#34;&#34;&#34;
+        self.add_text_message(&#34;&#34;)
+        self.dms = []
+        for item in self.dms_tree.get_children():
+            self.dms_tree.delete(item)
+
+    def _insert_names_tree(self, id, name:str):
+        &#34;&#34;&#34;
+        Inserts a user&#39;s name into the dms_tree widget.
+        &#34;&#34;&#34;
+        self.dms_tree.insert(&#39;&#39;, id, id, text=name)
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once upon initialization to add widgets to the frame
+        &#34;&#34;&#34;
+        dms_frame = tk.Frame(master=self, width=250)
+        dms_frame.pack(fill=tk.BOTH, side=tk.LEFT)
+        self.dms_tree = ttk.Treeview(dms_frame)
+        self.dms_tree.bind(&#34;&lt;&lt;TreeviewSelect&gt;&gt;&#34;, self.node_select)
+        self.dms_tree.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=5, pady=5)
+
+        
+        message_frame = tk.Frame(master=self, bg=&#34;&#34;)
+        message_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+        
+        editor_frame = tk.Frame(master=message_frame, bg=&#34;red&#34;)
+        editor_frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
+        
+        scroll_frame = tk.Frame(master=message_frame, bg=&#34;blue&#34;, width=10)
+        scroll_frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=False)
+
+        #chat display
+        self.display = tk.Text(editor_frame, height=0, width=0, state=&#39;disabled&#39;)
+        self.display.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=0, pady=0)
+        #chat entry box
+        self.message_editor = tk.Text(editor_frame, width=0, height=7, state=&#39;disabled&#39;)
+        self.message_editor.pack(fill=tk.BOTH, side=tk.LEFT, expand=True, padx=0, pady=0)
+
+        message_editor_scrollbar = tk.Scrollbar(master=scroll_frame, command=self.message_editor.yview)
+        self.message_editor[&#39;yscrollcommand&#39;] = message_editor_scrollbar.set
+        message_editor_scrollbar.pack(fill=tk.Y, side=tk.LEFT, expand=False, padx=0, pady=0)
+
+class Footer(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the footer portion of the root frame.
+    &#34;&#34;&#34;
+    def __init__(self, root, save_callback=None):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._save_callback = save_callback
+        self._draw()
+
+    def save_click(self):
+        &#34;&#34;&#34;
+        Calls the callback function specified in the save_callback class attribute, if
+        available, when the save_button has been clicked.
+        &#34;&#34;&#34;
+        if self._save_callback is not None:
+            self._save_callback()
+
+    def set_status(self, message):
+        &#34;&#34;&#34;
+        Updates the text that is displayed in the footer_label widget
+        &#34;&#34;&#34;
+        self.footer_label.configure(text=message)
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once upon initialization to add widgets to the frame
+        &#34;&#34;&#34;
+        self._img = tk.PhotoImage(file = &#39;./cat.png&#39;)
+        self._img = self._img.subsample(10, 10)
+
+        save_button = tk.Button(master=self, text=&#34;Send&#34;, width=100, image = self._img)
+        save_button.configure(command=self.save_click)
+        save_button.pack(fill=tk.BOTH, side=tk.RIGHT, padx=5, pady=5)
+
+        self.footer_label = tk.Label(master=self, text=&#34;Ready.&#34;)
+        self.footer_label.pack(fill=tk.BOTH, side=tk.LEFT, padx=5)
+
+
+class MainApp(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the main portion of the root frame. Also manages all method calls for
+    the Profile class.
+    &#34;&#34;&#34;
+    def __init__(self, root):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._is_loaded = False
+        self._is_online = False
+        self.current_recipient = &#34;&#34;
+        self.ds = None
+        self.dsuserver = &#34;168.235.86.101&#34;
+
+        # Initialize a new Profile and assign it to a class attribute.
+        self._current_profile = Profile()
+
+        # After all initialization is complete, call the _draw method to pack the widgets
+        # into the root frame
+        self._draw()
+
+    def new_profile(self):
+        &#34;&#34;&#34;
+        Creates a new DSU file when the &#39;New&#39; menu item is clicked.
+        &#34;&#34;&#34;
+        filename = tk.filedialog.asksaveasfile(defaultextension=&#39;.dsu&#39;, filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)])
+
+        # TODO Write code to perform whatever operations are necessary to prepare the UI for
+        # a new DSU file.
+        # HINT: You will probably need to do things like generate encryption keys and reset the ui.
+        if not filename == None:
+            self._profile_filename = filename.name
+            self._current_profile = Profile()
+            self.body.reset_ui()
+
+            self._is_loaded = True
+            self.footer.set_status(f&#34;Welcome {self._current_profile.username} to ICS Messenger &#34;)
+
+    def open_profile(self):
+        &#34;&#34;&#34;
+        Opens an existing DSU file when the &#39;Open&#39; menu item is clicked and loads the profile
+        data into the UI.
+        &#34;&#34;&#34;
+        filename = tk.filedialog.askopenfile(filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)])
+
+        # TODO: Write code to perform whatever operations are necessary to prepare the UI for
+        # an existing DSU file.
+        # HINT: You will probably need to do things like load a profile, import encryption keys 
+        # and update the UI with dms.
+        if not filename == None:
+            self.body.reset_ui()
+            self._profile_filename = filename.name
+            self._current_profile = Profile()
+            self._current_profile.load_profile(self._profile_filename)
+
+            self._is_loaded = True
+            self.body.set_dms(self._current_profile.chats, self._current_profile.username)
+            self.ds = DirectMessenger(self.dsuserver, self._current_profile.username, self._current_profile.password)
+            self.footer.set_status(f&#34;Welcome {self._current_profile.username} to ICS Messenger &#34;)
+
+    def load_messages(self):
+        &#34;&#34;&#34;
+        Load messages from the selected user
+        &#34;&#34;&#34;
+        self.body.display.configure(state = &#34;normal&#34;)
+        self.body.display.delete(&#39;0.0&#39;, &#39;end&#39;)
+
+        if self.ds.is_connected:
+            self._current_profile.chats[self.current_recipient].clear()
+
+            all_msgs = self.ds.retrieve_all()
+            for entry in all_msgs:
+                if entry[&#39;from&#39;] == self.current_recipient:
+                    new_dm = DirectMessage(self._current_profile.username, entry[&#39;message&#39;], float(entry[&#39;timestamp&#39;]))
+                    self._current_profile.chats[entry[&#39;from&#39;]].append(new_dm)
+
+        #get message from recipient
+        dm_messages = []
+        for message in self._current_profile.chats[self.current_recipient]:
+            new_dm = DirectMessage(self.current_recipient, message[&#39;message&#39;], message[&#39;timestamp&#39;])
+            dm_messages.append(new_dm)
+
+        #get message from self to recipient
+        if self._current_profile.username in self._current_profile.chats:
+            for message in self._current_profile.chats[self._current_profile.username]:
+                if message[&#39;recipient&#39;] == self.current_recipient:
+                    new_dm = DirectMessage(self._current_profile.username, message[&#39;message&#39;], message[&#39;timestamp&#39;])
+                    dm_messages.append(new_dm)
+
+        #sort the combined list
+        dm_messages = sorted(dm_messages, key=lambda message: message[&#39;timestamp&#39;])
+
+        for message in dm_messages:
+            self.body.add_text_message(f&#34;{message[&#39;recipient&#39;]}: {message[&#39;message&#39;]}\n\n&#34;)
+        self.body.display.configure(state = &#34;disabled&#34;)
+
+        if self.ds.is_connected:
+            self.after(2000, self.check_msg)
+
+    def check_msg(self):
+        &#34;&#34;&#34;
+        Checks new messages from the recipient
+        &#34;&#34;&#34;
+        new_msg_list = self.ds.retrieve_new()
+        for entry in new_msg_list:
+            if new_msg_list is not []:
+                #save to file
+                for message in new_msg_list:
+                    new_dm = DirectMessage(message[&#39;from&#39;], message[&#39;message&#39;], message[&#39;timestamp&#39;])
+                    if not message[&#39;from&#39;] in self._current_profile.chats:
+                        self._current_profile.chats[message[&#39;from&#39;]] = []
+                    self._current_profile.chats[message[&#39;from&#39;]].append(new_dm)
+                    if entry[&#39;from&#39;] == self.current_recipient:
+                        self.load_messages()
+                self._current_profile.save_profile(self._profile_filename)
+        
+        self.after(2000,self.check_msg)
+
+    def close(self):
+        &#34;&#34;&#34;
+        Closes the program when the &#39;Close&#39; menu item is clicked.
+        &#34;&#34;&#34;
+        self.root.destroy()
+
+    def edit_profile(self):
+        &#34;&#34;&#34;
+        Creates the edit window
+        &#34;&#34;&#34;
+        if self._is_loaded:
+            edit_window = EditWindow(self, self._current_profile)
+            edit_window.grab_set()
+
+    def edit_bio(self):
+        &#34;&#34;&#34;
+        Creates the new bio window
+        &#34;&#34;&#34;
+        if self._is_loaded:
+            bio_window = BioWindow(self, self._current_profile)
+            bio_window.grab_set()
+
+    def add_recipient(self):
+        &#34;&#34;&#34;
+        Creates the new add recipient window
+        &#34;&#34;&#34;
+        if self._is_loaded:
+            add_window = AddWindow(self, self._current_profile)
+            add_window.grab_set()
+
+    def send_dm(self):
+        &#34;&#34;&#34;
+        Sends a new message to the recipient
+        &#34;&#34;&#34;
+        if self._is_loaded:
+            message = self.body.get_text_message()
+
+            self.ds.send(message, self.current_recipient)
+            self.body.display.configure(state = &#34;normal&#34;)
+            self.body.add_text_message(f&#34;{self._current_profile.username}: {self.body.get_text_message()}\n\n&#34;)
+            self.body.display.configure(state = &#34;disabled&#34;)
+
+            #save to profile
+            dms = DirectMessage(self.current_recipient, message, time.time())
+            try:
+                self._current_profile.add_dm(self._current_profile.username, dms)
+            except RecipientNotFound as e:
+                print(e, &#34;Recipient not found&#34;)
+            self._current_profile.save_profile(self._profile_filename)
+            #resets message editor
+            self.body.message_editor.delete(&#39;1.0&#39;, &#39;end&#39;)
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once, upon initialization to add widgets to root frame
+        &#34;&#34;&#34;
+        # Build a menu and add it to the root frame.
+        menu_bar = tk.Menu(self.root)
+        self.root[&#39;menu&#39;] = menu_bar
+        menu_file = tk.Menu(menu_bar)
+        menu_bar.add_cascade(menu=menu_file, label=&#39;File&#39;)
+        menu_file.add_command(label=&#39;New&#39;, command=self.new_profile)
+        menu_file.add_command(label=&#39;Open...&#39;, command=self.open_profile)
+        menu_file.add_command(label=&#39;Close&#39;, command=self.close)
+        # NOTE: Additional menu items can be added by following the conventions here.
+        # The only top level menu item is a &#39;cascading menu&#39;, that presents a small menu of
+        # command items when clicked. But there are others. A single button or checkbox, for example,
+        # could also be added to the menu bar. 
+
+        #create new menu bar
+        menu_settings = tk.Menu(menu_bar)
+        menu_bar.add_cascade(menu=menu_settings, label = &#39;Settings&#39;)
+
+        #edit username and password menu
+        menu_settings.add_command(label=&#39;Edit User Data&#39;, command=self.edit_profile)
+
+        #edit bio menu
+        menu_settings.add_command(label=&#39;Edit Bio&#39;, command=self.edit_bio)
+
+        #add a user to chat list
+        menu_settings.add_command(label = &#34;Add User&#34;, command = self.add_recipient)
+
+        # The Body and Footer classes must be initialized and packed into the root window.
+        self.body = Body(self.root, self._current_profile, self)
+        self.body.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+        
+        # TODO: Add a callback for detecting changes to the online checkbox widget in the Footer class. Follow
+        # the conventions established by the existing save_callback parameter.
+        # HINT: There may already be a class method that serves as a good callback function!
+        self.footer = Footer(self.root, save_callback=self.send_dm)
+        self.footer.pack(fill=tk.BOTH, side=tk.BOTTOM)
+
+if __name__ == &#34;__main__&#34;:
+    # All Tkinter programs start with a root window. We will name ours &#39;main&#39;.
+    main = tk.Tk()
+
+    # &#39;title&#39; assigns a text value to the Title Bar area of a window.
+    main.title(&#34;ICS 32 Distributed Social Demo&#34;)
+
+    # This is just an arbitrary starting point. You can change the value around to see how
+    # the starting size of the window changes. I just thought this looked good for our UI.
+    main.geometry(&#34;720x480&#34;)
+
+    # adding this option removes some legacy behavior with menus that modern OSes don&#39;t support. 
+    # If you&#39;re curious, feel free to comment out and see how the menu changes.
+    main.option_add(&#39;*tearOff&#39;, False)
+
+    # Initialize the MainApp class, which is the starting point for the widgets used in the program.
+    # All of the classes that we use, subclass Tk.Frame, since our root frame is main, we initialize 
+    # the class with it.
+    MainApp(main)
+
+    # When update is called, we finalize the states of all widgets that have been configured within the root frame.
+    # Here, Update ensures that we get an accurate width and height reading based on the types of widgets
+    # we have used.
+    # minsize prevents the root window from resizing too small. Feel free to comment it out and see how
+    # the resizing behavior of the window changes.
+    main.update()
+    main.minsize(main.winfo_width(), main.winfo_height())
+    # And finally, start up the event loop for the program (more on this in lecture).
+    main.mainloop()</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="fp.AddUser"><code class="flex name class">
+<span>class <span class="ident">AddUser</span></span>
+<span>(</span><span>root, profile: Profile.Profile)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creating the body to add a user to talk to</p>
+<p>Construct a frame widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, relief, takefocus, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class AddUser(tk.Frame):
+    &#34;&#34;&#34;
+    Creating the body to add a user to talk to
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self.profile = profile
+        
+        tk.Label(self.root, text=&#39;Recipient&#39;).grid(row=0)
+
+        self.inputRecipient = tk.Entry(self.root)
+        self.inputRecipient.grid(row=0, column=1)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+</dd>
+<dt id="fp.AddWindow"><code class="flex name class">
+<span>class <span class="ident">AddWindow</span></span>
+<span>(</span><span>root, profile: Profile.Profile)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creating a window to add user in the settings</p>
+<p>Construct a toplevel widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, menu, relief, screen, takefocus,
+use, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class AddWindow(tk.Toplevel):
+    &#34;&#34;&#34;
+    Creating a window to add user in the settings
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        super().__init__(root)
+        self.root = root
+        self.title(&#34;Add Recipient&#34;)
+        self.profile = profile
+
+        self.body = AddUser(self, self.profile)
+
+        button = tk.Button(self, text=&#39;Add&#39;, command=self.on_close)
+        button.grid(row=3, column=1)
+
+    def on_close(self):
+        self.profile.chats[self.body.inputRecipient.get()] = []
+        self.root.body.set_dms(self.profile.chats, self.profile.username)
+        self.profile.save_profile(self.root._profile_filename)
+        self.destroy()</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Toplevel</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Wm</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="fp.AddWindow.on_close"><code class="name flex">
+<span>def <span class="ident">on_close</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_close(self):
+    self.profile.chats[self.body.inputRecipient.get()] = []
+    self.root.body.set_dms(self.profile.chats, self.profile.username)
+    self.profile.save_profile(self.root._profile_filename)
+    self.destroy()</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="fp.BioBody"><code class="flex name class">
+<span>class <span class="ident">BioBody</span></span>
+<span>(</span><span>root, profile: Profile.Profile)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creating the edit bio body</p>
+<p>Construct a frame widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, relief, takefocus, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class BioBody(tk.Frame):
+    &#34;&#34;&#34;
+    Creating the edit bio body
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self.profile = profile
+
+        tk.Label(self.root, text=&#39;Bio&#39;).grid(row=0)
+
+        self.inputBio = tk.Text(self.root)
+        self.inputBio.grid(row=1, column=0)
+
+        #import data from profile
+        self.inputBio.insert(0.0, profile.bio)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+</dd>
+<dt id="fp.BioWindow"><code class="flex name class">
+<span>class <span class="ident">BioWindow</span></span>
+<span>(</span><span>root, profile: Profile.Profile)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creating the settings window for changing bio</p>
+<p>Construct a toplevel widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, menu, relief, screen, takefocus,
+use, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class BioWindow(tk.Toplevel):
+    &#34;&#34;&#34;
+    Creating the settings window for changing bio
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        super().__init__(root)
+        self.root = root
+        self.title(&#34;Edit Bio&#34;)
+        self.profile = profile
+        self.geometry(&#39;700x450&#39;)
+
+        self.body = BioBody(self, self.profile)
+
+        button = tk.Button(self, text=&#39;Done&#39;, command=self.on_close)
+        button.grid(row=3, column=1)
+
+    def on_close(self):
+        self.profile.bio = self.body.inputBio.get(0.0, &#39;end&#39;)
+        self.profile.save_profile(self.root._profile_filename)
+        self.destroy()</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Toplevel</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Wm</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="fp.BioWindow.on_close"><code class="name flex">
+<span>def <span class="ident">on_close</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_close(self):
+    self.profile.bio = self.body.inputBio.get(0.0, &#39;end&#39;)
+    self.profile.save_profile(self.root._profile_filename)
+    self.destroy()</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="fp.Body"><code class="flex name class">
+<span>class <span class="ident">Body</span></span>
+<span>(</span><span>root, select_callback=None, app=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A subclass of tk.Frame that is responsible for drawing all of the widgets
+in the body portion of the root frame.</p>
+<p>Construct a frame widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, relief, takefocus, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Body(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the body portion of the root frame.
+    &#34;&#34;&#34;
+    def __init__(self, root, select_callback=None, app = None):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._select_callback = select_callback
+        self.app = app
+
+        # a list of the dms objects available in the active DSU file
+        self.dms = [DirectMessage]
+        
+        # After all initialization is complete, call the _draw method to pack the widgets
+        # into the Body instance 
+        self._draw()
+
+    def node_select(self, event):
+        &#34;&#34;&#34;
+        Displays message from the selected recipient
+        &#34;&#34;&#34;
+        try:
+            index = int(self.dms_tree.selection()[0])
+            name = self.dms[index]
+            self.app.current_recipient = name
+        except:
+            pass
+        self.app.load_messages()
+
+        self.message_editor.configure(state = &#34;normal&#34;)
+        self.message_editor.delete(&#39;1.0&#39;, &#39;end&#39;)
+        #scrolls to bottom
+        self.display.see(&#39;end&#39;)
+
+    def get_selected_index(self):
+        &#34;&#34;&#34;
+        Returns the index of the selected recipient
+        &#34;&#34;&#34;
+        if len(self.dms_tree.selection()) &gt; 0:
+            return int(self.dms_tree.selection()[0])
+        return -1
+
+    def get_text_message(self) -&gt; str:
+        &#34;&#34;&#34;
+        Returns the text that is currently displayed in the message_editor widget.
+        &#34;&#34;&#34;
+        return self.message_editor.get(&#39;1.0&#39;, &#39;end&#39;).rstrip()
+
+    def add_text_message(self, text:str):
+        &#34;&#34;&#34;
+        Add new text to the display box
+        &#34;&#34;&#34;
+        # code that deletes all current text in the self.display widget
+        # and inserts the value contained within the text parameter.
+        self.display.insert(&#39;end&#39;, text)
+        self.display.see(&#39;end&#39;)
+
+    def set_dms(self, dms:dict, exclude_name:str):
+        &#34;&#34;&#34;
+        Populates the tree with the recipient names
+        &#34;&#34;&#34;
+        self.dms = []
+        self.dms_tree.delete(*self.dms_tree.get_children())
+
+        keys = list(dms.keys())
+
+        for i in range (len(keys)):
+            if not keys[i] == exclude_name:
+                self.insert_name(str(keys[i]))
+
+    def insert_name(self, name:str):
+        &#34;&#34;&#34;
+        Inserts a single recipient name to the dms_tree widget.
+        &#34;&#34;&#34;
+        self.dms.append(name)
+        id = len(self.dms) - 1 #adjust id for 0-base of treeview widget
+        self._insert_names_tree(id, name)
+
+    def reset_ui(self):
+        &#34;&#34;&#34;
+        Resets all UI widgets to their default state. Useful for when clearing the UI is neccessary such
+        as when a new DSU file is loaded, for example.
+        &#34;&#34;&#34;
+        self.add_text_message(&#34;&#34;)
+        self.dms = []
+        for item in self.dms_tree.get_children():
+            self.dms_tree.delete(item)
+
+    def _insert_names_tree(self, id, name:str):
+        &#34;&#34;&#34;
+        Inserts a user&#39;s name into the dms_tree widget.
+        &#34;&#34;&#34;
+        self.dms_tree.insert(&#39;&#39;, id, id, text=name)
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once upon initialization to add widgets to the frame
+        &#34;&#34;&#34;
+        dms_frame = tk.Frame(master=self, width=250)
+        dms_frame.pack(fill=tk.BOTH, side=tk.LEFT)
+        self.dms_tree = ttk.Treeview(dms_frame)
+        self.dms_tree.bind(&#34;&lt;&lt;TreeviewSelect&gt;&gt;&#34;, self.node_select)
+        self.dms_tree.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=5, pady=5)
+
+        
+        message_frame = tk.Frame(master=self, bg=&#34;&#34;)
+        message_frame.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+        
+        editor_frame = tk.Frame(master=message_frame, bg=&#34;red&#34;)
+        editor_frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=True)
+        
+        scroll_frame = tk.Frame(master=message_frame, bg=&#34;blue&#34;, width=10)
+        scroll_frame.pack(fill=tk.BOTH, side=tk.LEFT, expand=False)
+
+        #chat display
+        self.display = tk.Text(editor_frame, height=0, width=0, state=&#39;disabled&#39;)
+        self.display.pack(fill=tk.BOTH, side=tk.TOP, expand=True, padx=0, pady=0)
+        #chat entry box
+        self.message_editor = tk.Text(editor_frame, width=0, height=7, state=&#39;disabled&#39;)
+        self.message_editor.pack(fill=tk.BOTH, side=tk.LEFT, expand=True, padx=0, pady=0)
+
+        message_editor_scrollbar = tk.Scrollbar(master=scroll_frame, command=self.message_editor.yview)
+        self.message_editor[&#39;yscrollcommand&#39;] = message_editor_scrollbar.set
+        message_editor_scrollbar.pack(fill=tk.Y, side=tk.LEFT, expand=False, padx=0, pady=0)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="fp.Body.add_text_message"><code class="name flex">
+<span>def <span class="ident">add_text_message</span></span>(<span>self, text: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Add new text to the display box</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_text_message(self, text:str):
+    &#34;&#34;&#34;
+    Add new text to the display box
+    &#34;&#34;&#34;
+    # code that deletes all current text in the self.display widget
+    # and inserts the value contained within the text parameter.
+    self.display.insert(&#39;end&#39;, text)
+    self.display.see(&#39;end&#39;)</code></pre>
+</details>
+</dd>
+<dt id="fp.Body.get_selected_index"><code class="name flex">
+<span>def <span class="ident">get_selected_index</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the index of the selected recipient</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_selected_index(self):
+    &#34;&#34;&#34;
+    Returns the index of the selected recipient
+    &#34;&#34;&#34;
+    if len(self.dms_tree.selection()) &gt; 0:
+        return int(self.dms_tree.selection()[0])
+    return -1</code></pre>
+</details>
+</dd>
+<dt id="fp.Body.get_text_message"><code class="name flex">
+<span>def <span class="ident">get_text_message</span></span>(<span>self) ‑> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Returns the text that is currently displayed in the message_editor widget.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def get_text_message(self) -&gt; str:
+    &#34;&#34;&#34;
+    Returns the text that is currently displayed in the message_editor widget.
+    &#34;&#34;&#34;
+    return self.message_editor.get(&#39;1.0&#39;, &#39;end&#39;).rstrip()</code></pre>
+</details>
+</dd>
+<dt id="fp.Body.insert_name"><code class="name flex">
+<span>def <span class="ident">insert_name</span></span>(<span>self, name: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Inserts a single recipient name to the dms_tree widget.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def insert_name(self, name:str):
+    &#34;&#34;&#34;
+    Inserts a single recipient name to the dms_tree widget.
+    &#34;&#34;&#34;
+    self.dms.append(name)
+    id = len(self.dms) - 1 #adjust id for 0-base of treeview widget
+    self._insert_names_tree(id, name)</code></pre>
+</details>
+</dd>
+<dt id="fp.Body.node_select"><code class="name flex">
+<span>def <span class="ident">node_select</span></span>(<span>self, event)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Displays message from the selected recipient</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def node_select(self, event):
+    &#34;&#34;&#34;
+    Displays message from the selected recipient
+    &#34;&#34;&#34;
+    try:
+        index = int(self.dms_tree.selection()[0])
+        name = self.dms[index]
+        self.app.current_recipient = name
+    except:
+        pass
+    self.app.load_messages()
+
+    self.message_editor.configure(state = &#34;normal&#34;)
+    self.message_editor.delete(&#39;1.0&#39;, &#39;end&#39;)
+    #scrolls to bottom
+    self.display.see(&#39;end&#39;)</code></pre>
+</details>
+</dd>
+<dt id="fp.Body.reset_ui"><code class="name flex">
+<span>def <span class="ident">reset_ui</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Resets all UI widgets to their default state. Useful for when clearing the UI is neccessary such
+as when a new DSU file is loaded, for example.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def reset_ui(self):
+    &#34;&#34;&#34;
+    Resets all UI widgets to their default state. Useful for when clearing the UI is neccessary such
+    as when a new DSU file is loaded, for example.
+    &#34;&#34;&#34;
+    self.add_text_message(&#34;&#34;)
+    self.dms = []
+    for item in self.dms_tree.get_children():
+        self.dms_tree.delete(item)</code></pre>
+</details>
+</dd>
+<dt id="fp.Body.set_dms"><code class="name flex">
+<span>def <span class="ident">set_dms</span></span>(<span>self, dms: dict, exclude_name: str)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Populates the tree with the recipient names</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_dms(self, dms:dict, exclude_name:str):
+    &#34;&#34;&#34;
+    Populates the tree with the recipient names
+    &#34;&#34;&#34;
+    self.dms = []
+    self.dms_tree.delete(*self.dms_tree.get_children())
+
+    keys = list(dms.keys())
+
+    for i in range (len(keys)):
+        if not keys[i] == exclude_name:
+            self.insert_name(str(keys[i]))</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="fp.EditBody"><code class="flex name class">
+<span>class <span class="ident">EditBody</span></span>
+<span>(</span><span>root, profile: Profile.Profile)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creating the username/password body</p>
+<p>Construct a frame widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, relief, takefocus, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EditBody(tk.Frame):
+    &#34;&#34;&#34;
+    Creating the username/password body
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self.profile = profile
+        
+        tk.Label(self.root, text=&#39;Username&#39;).grid(row=0)
+        tk.Label(self.root, text=&#39;Password&#39;).grid(row=1)
+
+        self.inputUsername = tk.Entry(self.root)
+        self.inputPassword = tk.Entry(self.root)
+        self.inputUsername.grid(row=0, column=1)
+        self.inputPassword.grid(row=1, column=1)
+
+        #import data from profile
+        self.inputUsername.insert(10, profile.username)
+        self.inputPassword.insert(10, profile.password)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+</dd>
+<dt id="fp.EditWindow"><code class="flex name class">
+<span>class <span class="ident">EditWindow</span></span>
+<span>(</span><span>root, profile: Profile.Profile)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creating the settings window for editing username/password</p>
+<p>Construct a toplevel widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, menu, relief, screen, takefocus,
+use, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class EditWindow(tk.Toplevel):
+    &#34;&#34;&#34;
+    Creating the settings window for editing username/password
+    &#34;&#34;&#34;
+    def __init__(self, root, profile:Profile):
+        super().__init__(root)
+        self.root = root
+        self.title(&#34;Edit Profile&#34;)
+        self.profile = profile
+
+        self.body = EditBody(self, self.profile)
+
+        button = tk.Button(self, text=&#39;Done&#39;, command=self.on_close)
+        button.grid(row=3, column=1)
+
+    def on_close(self):
+        if self.profile.username in self.profile.chats and not self.profile.username == self.body.inputUsername.get():
+            self.profile.chats.pop(self.profile.username)
+        self.profile.username = self.body.inputUsername.get()
+        self.profile.password = self.body.inputPassword.get()
+        self.profile.save_profile(self.root._profile_filename)
+        self.root.ds = DirectMessenger(self.root.dsuserver, self.body.inputUsername.get(), self.body.inputPassword.get())
+        self.root.footer.set_status(f&#34;Welcome {self.profile.username} to ICS Messenger &#34;)
+        if not self.profile.username in self.profile.chats:
+            self.profile.chats[self.profile.username] = []
+        self.destroy()</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Toplevel</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Wm</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="fp.EditWindow.on_close"><code class="name flex">
+<span>def <span class="ident">on_close</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def on_close(self):
+    if self.profile.username in self.profile.chats and not self.profile.username == self.body.inputUsername.get():
+        self.profile.chats.pop(self.profile.username)
+    self.profile.username = self.body.inputUsername.get()
+    self.profile.password = self.body.inputPassword.get()
+    self.profile.save_profile(self.root._profile_filename)
+    self.root.ds = DirectMessenger(self.root.dsuserver, self.body.inputUsername.get(), self.body.inputPassword.get())
+    self.root.footer.set_status(f&#34;Welcome {self.profile.username} to ICS Messenger &#34;)
+    if not self.profile.username in self.profile.chats:
+        self.profile.chats[self.profile.username] = []
+    self.destroy()</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="fp.Footer"><code class="flex name class">
+<span>class <span class="ident">Footer</span></span>
+<span>(</span><span>root, save_callback=None)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A subclass of tk.Frame that is responsible for drawing all of the widgets
+in the footer portion of the root frame.</p>
+<p>Construct a frame widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, relief, takefocus, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Footer(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the footer portion of the root frame.
+    &#34;&#34;&#34;
+    def __init__(self, root, save_callback=None):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._save_callback = save_callback
+        self._draw()
+
+    def save_click(self):
+        &#34;&#34;&#34;
+        Calls the callback function specified in the save_callback class attribute, if
+        available, when the save_button has been clicked.
+        &#34;&#34;&#34;
+        if self._save_callback is not None:
+            self._save_callback()
+
+    def set_status(self, message):
+        &#34;&#34;&#34;
+        Updates the text that is displayed in the footer_label widget
+        &#34;&#34;&#34;
+        self.footer_label.configure(text=message)
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once upon initialization to add widgets to the frame
+        &#34;&#34;&#34;
+        self._img = tk.PhotoImage(file = &#39;./cat.png&#39;)
+        self._img = self._img.subsample(10, 10)
+
+        save_button = tk.Button(master=self, text=&#34;Send&#34;, width=100, image = self._img)
+        save_button.configure(command=self.save_click)
+        save_button.pack(fill=tk.BOTH, side=tk.RIGHT, padx=5, pady=5)
+
+        self.footer_label = tk.Label(master=self, text=&#34;Ready.&#34;)
+        self.footer_label.pack(fill=tk.BOTH, side=tk.LEFT, padx=5)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="fp.Footer.save_click"><code class="name flex">
+<span>def <span class="ident">save_click</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Calls the callback function specified in the save_callback class attribute, if
+available, when the save_button has been clicked.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def save_click(self):
+    &#34;&#34;&#34;
+    Calls the callback function specified in the save_callback class attribute, if
+    available, when the save_button has been clicked.
+    &#34;&#34;&#34;
+    if self._save_callback is not None:
+        self._save_callback()</code></pre>
+</details>
+</dd>
+<dt id="fp.Footer.set_status"><code class="name flex">
+<span>def <span class="ident">set_status</span></span>(<span>self, message)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Updates the text that is displayed in the footer_label widget</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def set_status(self, message):
+    &#34;&#34;&#34;
+    Updates the text that is displayed in the footer_label widget
+    &#34;&#34;&#34;
+    self.footer_label.configure(text=message)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="fp.MainApp"><code class="flex name class">
+<span>class <span class="ident">MainApp</span></span>
+<span>(</span><span>root)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A subclass of tk.Frame that is responsible for drawing all of the widgets
+in the main portion of the root frame. Also manages all method calls for
+the Profile class.</p>
+<p>Construct a frame widget with the parent MASTER.</p>
+<p>Valid resource names: background, bd, bg, borderwidth, class,
+colormap, container, cursor, height, highlightbackground,
+highlightcolor, highlightthickness, relief, takefocus, visual, width.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class MainApp(tk.Frame):
+    &#34;&#34;&#34;
+    A subclass of tk.Frame that is responsible for drawing all of the widgets
+    in the main portion of the root frame. Also manages all method calls for
+    the Profile class.
+    &#34;&#34;&#34;
+    def __init__(self, root):
+        tk.Frame.__init__(self, root)
+        self.root = root
+        self._is_loaded = False
+        self._is_online = False
+        self.current_recipient = &#34;&#34;
+        self.ds = None
+        self.dsuserver = &#34;168.235.86.101&#34;
+
+        # Initialize a new Profile and assign it to a class attribute.
+        self._current_profile = Profile()
+
+        # After all initialization is complete, call the _draw method to pack the widgets
+        # into the root frame
+        self._draw()
+
+    def new_profile(self):
+        &#34;&#34;&#34;
+        Creates a new DSU file when the &#39;New&#39; menu item is clicked.
+        &#34;&#34;&#34;
+        filename = tk.filedialog.asksaveasfile(defaultextension=&#39;.dsu&#39;, filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)])
+
+        # TODO Write code to perform whatever operations are necessary to prepare the UI for
+        # a new DSU file.
+        # HINT: You will probably need to do things like generate encryption keys and reset the ui.
+        if not filename == None:
+            self._profile_filename = filename.name
+            self._current_profile = Profile()
+            self.body.reset_ui()
+
+            self._is_loaded = True
+            self.footer.set_status(f&#34;Welcome {self._current_profile.username} to ICS Messenger &#34;)
+
+    def open_profile(self):
+        &#34;&#34;&#34;
+        Opens an existing DSU file when the &#39;Open&#39; menu item is clicked and loads the profile
+        data into the UI.
+        &#34;&#34;&#34;
+        filename = tk.filedialog.askopenfile(filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)])
+
+        # TODO: Write code to perform whatever operations are necessary to prepare the UI for
+        # an existing DSU file.
+        # HINT: You will probably need to do things like load a profile, import encryption keys 
+        # and update the UI with dms.
+        if not filename == None:
+            self.body.reset_ui()
+            self._profile_filename = filename.name
+            self._current_profile = Profile()
+            self._current_profile.load_profile(self._profile_filename)
+
+            self._is_loaded = True
+            self.body.set_dms(self._current_profile.chats, self._current_profile.username)
+            self.ds = DirectMessenger(self.dsuserver, self._current_profile.username, self._current_profile.password)
+            self.footer.set_status(f&#34;Welcome {self._current_profile.username} to ICS Messenger &#34;)
+
+    def load_messages(self):
+        &#34;&#34;&#34;
+        Load messages from the selected user
+        &#34;&#34;&#34;
+        self.body.display.configure(state = &#34;normal&#34;)
+        self.body.display.delete(&#39;0.0&#39;, &#39;end&#39;)
+
+        if self.ds.is_connected:
+            self._current_profile.chats[self.current_recipient].clear()
+
+            all_msgs = self.ds.retrieve_all()
+            for entry in all_msgs:
+                if entry[&#39;from&#39;] == self.current_recipient:
+                    new_dm = DirectMessage(self._current_profile.username, entry[&#39;message&#39;], float(entry[&#39;timestamp&#39;]))
+                    self._current_profile.chats[entry[&#39;from&#39;]].append(new_dm)
+
+        #get message from recipient
+        dm_messages = []
+        for message in self._current_profile.chats[self.current_recipient]:
+            new_dm = DirectMessage(self.current_recipient, message[&#39;message&#39;], message[&#39;timestamp&#39;])
+            dm_messages.append(new_dm)
+
+        #get message from self to recipient
+        if self._current_profile.username in self._current_profile.chats:
+            for message in self._current_profile.chats[self._current_profile.username]:
+                if message[&#39;recipient&#39;] == self.current_recipient:
+                    new_dm = DirectMessage(self._current_profile.username, message[&#39;message&#39;], message[&#39;timestamp&#39;])
+                    dm_messages.append(new_dm)
+
+        #sort the combined list
+        dm_messages = sorted(dm_messages, key=lambda message: message[&#39;timestamp&#39;])
+
+        for message in dm_messages:
+            self.body.add_text_message(f&#34;{message[&#39;recipient&#39;]}: {message[&#39;message&#39;]}\n\n&#34;)
+        self.body.display.configure(state = &#34;disabled&#34;)
+
+        if self.ds.is_connected:
+            self.after(2000, self.check_msg)
+
+    def check_msg(self):
+        &#34;&#34;&#34;
+        Checks new messages from the recipient
+        &#34;&#34;&#34;
+        new_msg_list = self.ds.retrieve_new()
+        for entry in new_msg_list:
+            if new_msg_list is not []:
+                #save to file
+                for message in new_msg_list:
+                    new_dm = DirectMessage(message[&#39;from&#39;], message[&#39;message&#39;], message[&#39;timestamp&#39;])
+                    if not message[&#39;from&#39;] in self._current_profile.chats:
+                        self._current_profile.chats[message[&#39;from&#39;]] = []
+                    self._current_profile.chats[message[&#39;from&#39;]].append(new_dm)
+                    if entry[&#39;from&#39;] == self.current_recipient:
+                        self.load_messages()
+                self._current_profile.save_profile(self._profile_filename)
+        
+        self.after(2000,self.check_msg)
+
+    def close(self):
+        &#34;&#34;&#34;
+        Closes the program when the &#39;Close&#39; menu item is clicked.
+        &#34;&#34;&#34;
+        self.root.destroy()
+
+    def edit_profile(self):
+        &#34;&#34;&#34;
+        Creates the edit window
+        &#34;&#34;&#34;
+        if self._is_loaded:
+            edit_window = EditWindow(self, self._current_profile)
+            edit_window.grab_set()
+
+    def edit_bio(self):
+        &#34;&#34;&#34;
+        Creates the new bio window
+        &#34;&#34;&#34;
+        if self._is_loaded:
+            bio_window = BioWindow(self, self._current_profile)
+            bio_window.grab_set()
+
+    def add_recipient(self):
+        &#34;&#34;&#34;
+        Creates the new add recipient window
+        &#34;&#34;&#34;
+        if self._is_loaded:
+            add_window = AddWindow(self, self._current_profile)
+            add_window.grab_set()
+
+    def send_dm(self):
+        &#34;&#34;&#34;
+        Sends a new message to the recipient
+        &#34;&#34;&#34;
+        if self._is_loaded:
+            message = self.body.get_text_message()
+
+            self.ds.send(message, self.current_recipient)
+            self.body.display.configure(state = &#34;normal&#34;)
+            self.body.add_text_message(f&#34;{self._current_profile.username}: {self.body.get_text_message()}\n\n&#34;)
+            self.body.display.configure(state = &#34;disabled&#34;)
+
+            #save to profile
+            dms = DirectMessage(self.current_recipient, message, time.time())
+            try:
+                self._current_profile.add_dm(self._current_profile.username, dms)
+            except RecipientNotFound as e:
+                print(e, &#34;Recipient not found&#34;)
+            self._current_profile.save_profile(self._profile_filename)
+            #resets message editor
+            self.body.message_editor.delete(&#39;1.0&#39;, &#39;end&#39;)
+
+    def _draw(self):
+        &#34;&#34;&#34;
+        Call only once, upon initialization to add widgets to root frame
+        &#34;&#34;&#34;
+        # Build a menu and add it to the root frame.
+        menu_bar = tk.Menu(self.root)
+        self.root[&#39;menu&#39;] = menu_bar
+        menu_file = tk.Menu(menu_bar)
+        menu_bar.add_cascade(menu=menu_file, label=&#39;File&#39;)
+        menu_file.add_command(label=&#39;New&#39;, command=self.new_profile)
+        menu_file.add_command(label=&#39;Open...&#39;, command=self.open_profile)
+        menu_file.add_command(label=&#39;Close&#39;, command=self.close)
+        # NOTE: Additional menu items can be added by following the conventions here.
+        # The only top level menu item is a &#39;cascading menu&#39;, that presents a small menu of
+        # command items when clicked. But there are others. A single button or checkbox, for example,
+        # could also be added to the menu bar. 
+
+        #create new menu bar
+        menu_settings = tk.Menu(menu_bar)
+        menu_bar.add_cascade(menu=menu_settings, label = &#39;Settings&#39;)
+
+        #edit username and password menu
+        menu_settings.add_command(label=&#39;Edit User Data&#39;, command=self.edit_profile)
+
+        #edit bio menu
+        menu_settings.add_command(label=&#39;Edit Bio&#39;, command=self.edit_bio)
+
+        #add a user to chat list
+        menu_settings.add_command(label = &#34;Add User&#34;, command = self.add_recipient)
+
+        # The Body and Footer classes must be initialized and packed into the root window.
+        self.body = Body(self.root, self._current_profile, self)
+        self.body.pack(fill=tk.BOTH, side=tk.TOP, expand=True)
+        
+        # TODO: Add a callback for detecting changes to the online checkbox widget in the Footer class. Follow
+        # the conventions established by the existing save_callback parameter.
+        # HINT: There may already be a class method that serves as a good callback function!
+        self.footer = Footer(self.root, save_callback=self.send_dm)
+        self.footer.pack(fill=tk.BOTH, side=tk.BOTTOM)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>tkinter.Frame</li>
+<li>tkinter.Widget</li>
+<li>tkinter.BaseWidget</li>
+<li>tkinter.Misc</li>
+<li>tkinter.Pack</li>
+<li>tkinter.Place</li>
+<li>tkinter.Grid</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="fp.MainApp.add_recipient"><code class="name flex">
+<span>def <span class="ident">add_recipient</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates the new add recipient window</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def add_recipient(self):
+    &#34;&#34;&#34;
+    Creates the new add recipient window
+    &#34;&#34;&#34;
+    if self._is_loaded:
+        add_window = AddWindow(self, self._current_profile)
+        add_window.grab_set()</code></pre>
+</details>
+</dd>
+<dt id="fp.MainApp.check_msg"><code class="name flex">
+<span>def <span class="ident">check_msg</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Checks new messages from the recipient</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def check_msg(self):
+    &#34;&#34;&#34;
+    Checks new messages from the recipient
+    &#34;&#34;&#34;
+    new_msg_list = self.ds.retrieve_new()
+    for entry in new_msg_list:
+        if new_msg_list is not []:
+            #save to file
+            for message in new_msg_list:
+                new_dm = DirectMessage(message[&#39;from&#39;], message[&#39;message&#39;], message[&#39;timestamp&#39;])
+                if not message[&#39;from&#39;] in self._current_profile.chats:
+                    self._current_profile.chats[message[&#39;from&#39;]] = []
+                self._current_profile.chats[message[&#39;from&#39;]].append(new_dm)
+                if entry[&#39;from&#39;] == self.current_recipient:
+                    self.load_messages()
+            self._current_profile.save_profile(self._profile_filename)
+    
+    self.after(2000,self.check_msg)</code></pre>
+</details>
+</dd>
+<dt id="fp.MainApp.close"><code class="name flex">
+<span>def <span class="ident">close</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Closes the program when the 'Close' menu item is clicked.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def close(self):
+    &#34;&#34;&#34;
+    Closes the program when the &#39;Close&#39; menu item is clicked.
+    &#34;&#34;&#34;
+    self.root.destroy()</code></pre>
+</details>
+</dd>
+<dt id="fp.MainApp.edit_bio"><code class="name flex">
+<span>def <span class="ident">edit_bio</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates the new bio window</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def edit_bio(self):
+    &#34;&#34;&#34;
+    Creates the new bio window
+    &#34;&#34;&#34;
+    if self._is_loaded:
+        bio_window = BioWindow(self, self._current_profile)
+        bio_window.grab_set()</code></pre>
+</details>
+</dd>
+<dt id="fp.MainApp.edit_profile"><code class="name flex">
+<span>def <span class="ident">edit_profile</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates the edit window</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def edit_profile(self):
+    &#34;&#34;&#34;
+    Creates the edit window
+    &#34;&#34;&#34;
+    if self._is_loaded:
+        edit_window = EditWindow(self, self._current_profile)
+        edit_window.grab_set()</code></pre>
+</details>
+</dd>
+<dt id="fp.MainApp.load_messages"><code class="name flex">
+<span>def <span class="ident">load_messages</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Load messages from the selected user</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def load_messages(self):
+    &#34;&#34;&#34;
+    Load messages from the selected user
+    &#34;&#34;&#34;
+    self.body.display.configure(state = &#34;normal&#34;)
+    self.body.display.delete(&#39;0.0&#39;, &#39;end&#39;)
+
+    if self.ds.is_connected:
+        self._current_profile.chats[self.current_recipient].clear()
+
+        all_msgs = self.ds.retrieve_all()
+        for entry in all_msgs:
+            if entry[&#39;from&#39;] == self.current_recipient:
+                new_dm = DirectMessage(self._current_profile.username, entry[&#39;message&#39;], float(entry[&#39;timestamp&#39;]))
+                self._current_profile.chats[entry[&#39;from&#39;]].append(new_dm)
+
+    #get message from recipient
+    dm_messages = []
+    for message in self._current_profile.chats[self.current_recipient]:
+        new_dm = DirectMessage(self.current_recipient, message[&#39;message&#39;], message[&#39;timestamp&#39;])
+        dm_messages.append(new_dm)
+
+    #get message from self to recipient
+    if self._current_profile.username in self._current_profile.chats:
+        for message in self._current_profile.chats[self._current_profile.username]:
+            if message[&#39;recipient&#39;] == self.current_recipient:
+                new_dm = DirectMessage(self._current_profile.username, message[&#39;message&#39;], message[&#39;timestamp&#39;])
+                dm_messages.append(new_dm)
+
+    #sort the combined list
+    dm_messages = sorted(dm_messages, key=lambda message: message[&#39;timestamp&#39;])
+
+    for message in dm_messages:
+        self.body.add_text_message(f&#34;{message[&#39;recipient&#39;]}: {message[&#39;message&#39;]}\n\n&#34;)
+    self.body.display.configure(state = &#34;disabled&#34;)
+
+    if self.ds.is_connected:
+        self.after(2000, self.check_msg)</code></pre>
+</details>
+</dd>
+<dt id="fp.MainApp.new_profile"><code class="name flex">
+<span>def <span class="ident">new_profile</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Creates a new DSU file when the 'New' menu item is clicked.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def new_profile(self):
+    &#34;&#34;&#34;
+    Creates a new DSU file when the &#39;New&#39; menu item is clicked.
+    &#34;&#34;&#34;
+    filename = tk.filedialog.asksaveasfile(defaultextension=&#39;.dsu&#39;, filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)])
+
+    # TODO Write code to perform whatever operations are necessary to prepare the UI for
+    # a new DSU file.
+    # HINT: You will probably need to do things like generate encryption keys and reset the ui.
+    if not filename == None:
+        self._profile_filename = filename.name
+        self._current_profile = Profile()
+        self.body.reset_ui()
+
+        self._is_loaded = True
+        self.footer.set_status(f&#34;Welcome {self._current_profile.username} to ICS Messenger &#34;)</code></pre>
+</details>
+</dd>
+<dt id="fp.MainApp.open_profile"><code class="name flex">
+<span>def <span class="ident">open_profile</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Opens an existing DSU file when the 'Open' menu item is clicked and loads the profile
+data into the UI.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def open_profile(self):
+    &#34;&#34;&#34;
+    Opens an existing DSU file when the &#39;Open&#39; menu item is clicked and loads the profile
+    data into the UI.
+    &#34;&#34;&#34;
+    filename = tk.filedialog.askopenfile(filetypes=[(&#39;Distributed Social Profile&#39;, &#39;*.dsu&#39;)])
+
+    # TODO: Write code to perform whatever operations are necessary to prepare the UI for
+    # an existing DSU file.
+    # HINT: You will probably need to do things like load a profile, import encryption keys 
+    # and update the UI with dms.
+    if not filename == None:
+        self.body.reset_ui()
+        self._profile_filename = filename.name
+        self._current_profile = Profile()
+        self._current_profile.load_profile(self._profile_filename)
+
+        self._is_loaded = True
+        self.body.set_dms(self._current_profile.chats, self._current_profile.username)
+        self.ds = DirectMessenger(self.dsuserver, self._current_profile.username, self._current_profile.password)
+        self.footer.set_status(f&#34;Welcome {self._current_profile.username} to ICS Messenger &#34;)</code></pre>
+</details>
+</dd>
+<dt id="fp.MainApp.send_dm"><code class="name flex">
+<span>def <span class="ident">send_dm</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Sends a new message to the recipient</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def send_dm(self):
+    &#34;&#34;&#34;
+    Sends a new message to the recipient
+    &#34;&#34;&#34;
+    if self._is_loaded:
+        message = self.body.get_text_message()
+
+        self.ds.send(message, self.current_recipient)
+        self.body.display.configure(state = &#34;normal&#34;)
+        self.body.add_text_message(f&#34;{self._current_profile.username}: {self.body.get_text_message()}\n\n&#34;)
+        self.body.display.configure(state = &#34;disabled&#34;)
+
+        #save to profile
+        dms = DirectMessage(self.current_recipient, message, time.time())
+        try:
+            self._current_profile.add_dm(self._current_profile.username, dms)
+        except RecipientNotFound as e:
+            print(e, &#34;Recipient not found&#34;)
+        self._current_profile.save_profile(self._profile_filename)
+        #resets message editor
+        self.body.message_editor.delete(&#39;1.0&#39;, &#39;end&#39;)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="fp.AddUser" href="#fp.AddUser">AddUser</a></code></h4>
+</li>
+<li>
+<h4><code><a title="fp.AddWindow" href="#fp.AddWindow">AddWindow</a></code></h4>
+<ul class="">
+<li><code><a title="fp.AddWindow.on_close" href="#fp.AddWindow.on_close">on_close</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="fp.BioBody" href="#fp.BioBody">BioBody</a></code></h4>
+</li>
+<li>
+<h4><code><a title="fp.BioWindow" href="#fp.BioWindow">BioWindow</a></code></h4>
+<ul class="">
+<li><code><a title="fp.BioWindow.on_close" href="#fp.BioWindow.on_close">on_close</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="fp.Body" href="#fp.Body">Body</a></code></h4>
+<ul class="two-column">
+<li><code><a title="fp.Body.add_text_message" href="#fp.Body.add_text_message">add_text_message</a></code></li>
+<li><code><a title="fp.Body.get_selected_index" href="#fp.Body.get_selected_index">get_selected_index</a></code></li>
+<li><code><a title="fp.Body.get_text_message" href="#fp.Body.get_text_message">get_text_message</a></code></li>
+<li><code><a title="fp.Body.insert_name" href="#fp.Body.insert_name">insert_name</a></code></li>
+<li><code><a title="fp.Body.node_select" href="#fp.Body.node_select">node_select</a></code></li>
+<li><code><a title="fp.Body.reset_ui" href="#fp.Body.reset_ui">reset_ui</a></code></li>
+<li><code><a title="fp.Body.set_dms" href="#fp.Body.set_dms">set_dms</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="fp.EditBody" href="#fp.EditBody">EditBody</a></code></h4>
+</li>
+<li>
+<h4><code><a title="fp.EditWindow" href="#fp.EditWindow">EditWindow</a></code></h4>
+<ul class="">
+<li><code><a title="fp.EditWindow.on_close" href="#fp.EditWindow.on_close">on_close</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="fp.Footer" href="#fp.Footer">Footer</a></code></h4>
+<ul class="">
+<li><code><a title="fp.Footer.save_click" href="#fp.Footer.save_click">save_click</a></code></li>
+<li><code><a title="fp.Footer.set_status" href="#fp.Footer.set_status">set_status</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="fp.MainApp" href="#fp.MainApp">MainApp</a></code></h4>
+<ul class="two-column">
+<li><code><a title="fp.MainApp.add_recipient" href="#fp.MainApp.add_recipient">add_recipient</a></code></li>
+<li><code><a title="fp.MainApp.check_msg" href="#fp.MainApp.check_msg">check_msg</a></code></li>
+<li><code><a title="fp.MainApp.close" href="#fp.MainApp.close">close</a></code></li>
+<li><code><a title="fp.MainApp.edit_bio" href="#fp.MainApp.edit_bio">edit_bio</a></code></li>
+<li><code><a title="fp.MainApp.edit_profile" href="#fp.MainApp.edit_profile">edit_profile</a></code></li>
+<li><code><a title="fp.MainApp.load_messages" href="#fp.MainApp.load_messages">load_messages</a></code></li>
+<li><code><a title="fp.MainApp.new_profile" href="#fp.MainApp.new_profile">new_profile</a></code></li>
+<li><code><a title="fp.MainApp.open_profile" href="#fp.MainApp.open_profile">open_profile</a></code></li>
+<li><code><a title="fp.MainApp.send_dm" href="#fp.MainApp.send_dm">send_dm</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
