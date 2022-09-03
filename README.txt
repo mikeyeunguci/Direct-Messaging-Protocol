@@ -1,3 +1,9 @@
+Direct Messaging Protocol
+• Developed a module that enables a program to send and receive direct encrypted messages with another user on the DSP platform
+• Incoporated the module into a GUI with multi-user capabilities using Tkinter
+
+
+
 How to Build
 Make sure ds_messenger.py, ds_protocol.py, fp.py, and Profile.py are all in the same file.
 Don't forget to include cat.png as well, very important.
@@ -24,7 +30,7 @@ Flourish
 Made the send button into a cat
 
 Other notes
-Custom classes at the top of fp.py to help manage tkinter.
+Custom classes at the top of fp.py to help manage tkinter
 
 Collaborators:
 https://github.com/mikeyeunguci
