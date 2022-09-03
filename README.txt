@@ -25,3 +25,7 @@ Made the send button into a cat
 
 Other notes
 Custom classes at the top of fp.py to help manage tkinter.
+
+Collaborators:
+https://github.com/mikeyeunguci
+https://github.com/RioSuzukiUCI
