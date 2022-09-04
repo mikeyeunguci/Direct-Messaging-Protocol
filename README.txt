@@ -1,4 +1,4 @@
-#Direct Messaging Protocol
+# Direct Messaging Protocol
 
 ## Description
 • Developed a module that enables a program to send and receive direct encrypted messages with another user on the DSP platform while also saving those messages
