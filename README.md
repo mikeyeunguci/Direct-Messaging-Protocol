@@ -31,11 +31,10 @@ Enter a message you would like to send in the bottom right text box and press "S
 6.
 Enjoy
 
-Flourish
-Made the send button into a cat
 
 Other notes
 Custom classes at the top of fp.py to help manage tkinter
+Flourish: Made the send button into a cat
 
 ## Credits
 UCI ICS 32 Spring 2021 Programming with Software Libraries 
